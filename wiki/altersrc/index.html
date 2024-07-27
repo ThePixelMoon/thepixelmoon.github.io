@@ -45,7 +45,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header id="navbar">
         <nav>
             <a href="../../index.html">Alter Source</a>
             <a href="../../tf2ce.html">TF2:CE</a>
@@ -53,6 +53,18 @@
         <h1>Alter Source documentations</h1>
     </header>
 
+    <script>
+	    const queryString = window.location.search;
+	    console.log("current queryString is: " + queryString);
+
+	    const urlParams = new URLSearchParams(queryString);
+
+	    if(urlParams.has("isLoadedFromAlterSrcWebView")
+	    {
+                  document.getElementById("navbar").style.display = "none";
+	    }
+    </script>
+	
     <div class="container">
         <section id="overview">
             <h2>Welcome to the Alter Source wiki!</h2>
