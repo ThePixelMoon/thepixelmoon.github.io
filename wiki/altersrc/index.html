@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alter Source wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			color: #333;
+			background-color: #f2f2f2;
+        }
+        header {
+            background-color: #1286c4;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #e3e3e3;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="navbar">
+        <nav>
+            <a href="../../index.html">Alter Source</a>
+            <a href="../../tf2ce.html">TF2:CE</a>
+        </nav><br>
+        <h1>Alter Source documentations</h1>
+    </header>
+
+    <script>
+	    const queryString = window.location.search;
+	    console.log("current queryString is: " + queryString);
+
+	    const urlParams = new URLSearchParams(queryString);
+
+	    if(urlParams.has("isLoadedFromAlterSrcWebView")
+	    {
+                  document.getElementById("navbar").style.display = "none";
+	    }
+    </script>
+	
+    <div class="container">
+        <section id="overview">
+            <h2>Welcome to the Alter Source wiki!</h2>
+            <p>This official wiki from the Alter Source developers will guide your way into mapping, making addons and more!</p>
+        </section>
+
+        <section id="pageList">
+            <li><a href="lua_luareferences.html">Alter Source Lua References</a></li>
+            <li><a href="creatingaddons_gettingstarted.html">Creating addons: Getting started</a></li>
+            <li><a href="mapping_gettingstarted.html">Mapping: Getting started</a></li>
+            <li><a href="mapping_firstmapcreation.html">Mapping: Making your first map</a></li>
+            <li><a href="mapping_commonissuesandmistakes.html">Mapping: Common issues and mistakes</a></li>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or need support, feel free to reach out:</p>
+            <ul>
+                <li><strong>Email:</strong> yourlocalmoon7@gmail.com</li>
+                <li><strong>Discord:</strong> Join our community on <a href="https://discord.gg/C739U93UsW" target="_blank">Discord</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 YourLocalMoon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
