@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+    width: 80%;
+}
+
+div {
+    background-color: rgba(0, 255, 255, 0.14);
+    width: 40%;
+}
+
+span {
+    color: rgb(0, 179, 255);
+}
+
+html {
+    background-color: rgba(0, 255, 255, 0.051);
+}
