@@ -10,7 +10,7 @@
         document.documentElement.classList.toggle("dark-mode");
 
         const button = document.querySelector(".dark");
-        button.textContent = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
+        button.textContent = document.documentElement.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
     }
     </script>
 </head>
